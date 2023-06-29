@@ -1,0 +1,26 @@
+{
+  "kinematicChains": [
+    {
+      "chainName": "LeftEndEffector",
+      "joints": ["torso_lift_joint"],
+      "eelink": "torso_lift_link"
+    }
+  ],
+  "goals": [
+    {
+      "goalName": "LeftEndEffector",
+      "jointName": "torso_lift_link",
+      "restingPosition": [0, 0, 0.5],
+      "restingOrientation": [0, 0, 0],
+      "objectives": [
+        {
+          "type": "position",
+          "parameters": {
+            "weight": "0.5",
+            "acceptableError": "0.1"
+          }
+        }
+      ]
+    }
+  ]
+}

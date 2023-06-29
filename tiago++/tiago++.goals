@@ -1,0 +1,46 @@
+{
+  "kinematicChains": [
+    {
+      "chainName": "LeftEndEffector",
+      "joints": ["arm_left_1_joint", "arm_left_2_joint", "arm_left_3_joint", "arm_left_4_joint", "arm_left_5_joint", "arm_left_6_joint", "arm_left_7_joint"],
+      "eelink": "gripper_left_grasping_frame"
+    },
+    {
+      "chainName": "RightEndEffector",
+      "joints": ["arm_right_1_joint", "arm_right_2_joint", "arm_right_3_joint", "arm_right_4_joint", "arm_right_5_joint", "arm_right_6_joint", "arm_right_7_joint"],
+      "eelink": "gripper_right_grasping_frame"
+    }
+  ],
+  "goals": [
+    {
+      "goalName": "RightEndEffector",
+      "jointName": "gripper_right_grasping_frame",
+      "restingPosition": [0, 0, 0.5],
+      "restingOrientation": [0, 0, 0],
+      "objectives": [
+        {
+          "type": "position",
+          "parameters": {
+            "weight": "0.5",
+            "acceptableError": "0.1"
+          }
+        }
+      ]
+    },
+    {
+      "goalName": "LeftEndEffector",
+      "jointName": "gripper_left_grasping_frame",
+      "restingPosition": [-1, 1, 1],
+      "restingOrientation": [0, 0, 0],
+      "objectives": [
+        {
+          "type": "position",
+          "parameters": {
+            "weight": "0.5",
+            "acceptableError": "0.1"
+          }
+        }
+      ]
+    }
+  ]
+}

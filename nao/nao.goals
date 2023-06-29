@@ -1,0 +1,60 @@
+{
+  "kinematicChains": [
+    {
+      "chainName": "LeftEndEffector",
+      "joints": ["LShoulderPitch", "LShoulderRoll", "LElbowYaw", "LElbowRoll", "LWristYaw"],
+      "eelink": "l_gripper"
+    },
+    {
+      "chainName": "RightEndEffector",
+      "joints": ["RShoulderPitch", "RShoulderRoll", "RElbowYaw", "RElbowRoll", "RWristYaw"],
+      "eelink": "r_gripper"
+    }
+  ],
+  "goals": [
+    {
+      "goalName": "RightEndEffector",
+      "jointName": "r_gripper",
+      "restingPosition": [0, 0, 0.5],
+      "restingOrientation": [0, 0, 0],
+      "objectives": [
+        {
+          "type": "position",
+          "parameters": {
+            "weight": "0.1",
+            "acceptableError": "0.1"
+          }
+        },
+        {
+            "type": "orientation",
+            "parameters": {
+            "weight": "1.0",
+            "acceptableError": "0.05"
+           }
+        }
+      ]
+    },
+    {
+      "goalName": "LeftEndEffector",
+      "jointName": "l_gripper",
+      "restingPosition": [-1, 1, 1],
+      "restingOrientation": [0, 0, 0],
+      "objectives": [
+        {
+          "type": "position",
+          "parameters": {
+            "weight": "0.1",
+            "acceptableError": "0.1"
+          }
+        },
+        {
+          "type": "orientation",
+          "parameters": {
+            "weight": "1.0",
+            "acceptableError": "0.05"
+           }
+        }
+      ]
+    }
+  ]
+}
