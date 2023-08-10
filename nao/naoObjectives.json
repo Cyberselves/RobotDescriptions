@@ -1,0 +1,14 @@
+{
+    "objectives" : [
+        {   "name"      : "LeftEndEffector1",
+            "link"      : "l_wrist",
+            "type"      : "position",
+            "weight"    : 1.0
+        },
+        {   "name" : "RightEndEffector1",
+            "link" : "r_wrist",
+            "type" : "position",
+            "weight"    : 1.0
+        }
+    ]
+}
