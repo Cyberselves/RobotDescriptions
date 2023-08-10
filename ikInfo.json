@@ -1,6 +1,0 @@
-{
-    "generations"           : 2,
-    "populationSize"        : 25,
-    "elites"                : 2,
-    "avoidSelfCollisions"   : true
-}
