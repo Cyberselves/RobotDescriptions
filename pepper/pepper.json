@@ -1,5 +1,4 @@
 {
-    "robotTreeFile"         : "../robotInfo/pepper.tree.json",
     "effectors"             : ["head","l_wrist","r_wrist"],
     "generations"           : 2,
     "population"            : 25,

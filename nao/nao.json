@@ -1,5 +1,4 @@
 {
-    "robotTreeFile"         : "../robotInfo/nao.tree.json",
     "effectors"             : ["Head","r_wrist","l_wrist","r_ankle","l_ankle"],
     "generations"           : 2,
     "population"            : 25,
