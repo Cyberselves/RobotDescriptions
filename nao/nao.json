@@ -1,7 +1,8 @@
 {
-    "effectors"             : ["Head","r_wrist","l_wrist","r_ankle","l_ankle"],
+    "effectors"             : ["Head","r_wrist","l_wrist"],
     "generations"           : 2,
     "population"            : 25,
     "elites"                : 4,
-    "collisionSigma"        : 0.5
+    "collisionSigma"        : 0,
+    "chains"                : [["Head"], ["LShoulderPitch", "LShoulderRoll", "LElbowYaw", "LElbowRoll", "LWristYaw"], ["RShoulderPitch", "RShoulderRoll", "RElbowYaw", "RElbowRoll", "RWristYaw"]]
 }
