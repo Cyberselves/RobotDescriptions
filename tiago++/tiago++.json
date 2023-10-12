@@ -1,7 +1,7 @@
 {
     "effectors"             : ["head_2_link","gripper_left_grasping_frame","gripper_right_grasping_frame"],
-    "generations"           : 2,
-    "population"            : 25,
+    "generations"           : 3,
+    "population"            : 50,
     "elites"                : 4,
     "collisionSigma"        : 0,
     "chains"                : [["head_1_link", "head_2_link"], ["arm_left_1_joint", "arm_left_2_joint", "arm_left_3_joint", "arm_left_4_joint", "arm_left_5_joint", "arm_left_6_joint", "arm_left_7_joint"], ["arm_right_1_joint", "arm_right_2_joint", "arm_right_3_joint", "arm_right_4_joint", "arm_right_5_joint", "arm_right_6_joint", "arm_right_7_joint"]]
