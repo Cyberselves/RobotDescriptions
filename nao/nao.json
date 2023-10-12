@@ -3,6 +3,6 @@
     "generations"           : 2,
     "population"            : 25,
     "elites"                : 4,
-    "collisionSigma"        : 0,
+    "collisionSigma"        : 0.5,
     "chains"                : [["Head"], ["LShoulderPitch", "LShoulderRoll", "LElbowYaw", "LElbowRoll", "LWristYaw"], ["RShoulderPitch", "RShoulderRoll", "RElbowYaw", "RElbowRoll", "RWristYaw"]]
 }
