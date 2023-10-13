@@ -1,11 +1,8 @@
 {
-    "IKs" : [
-        {   "rootLink"        : "",
-            "effectors"       : ["wrist_flex_link"],
-            "generations"     : 2,
-            "population"      : 25,
-            "elites"          : 4,
-            "collisionSigma"  : 0.5}
-    ],
-    "pathToMeshes" : "/Users/stuartwilson/Desktop/BowLocalDev/robotInfo/"
+    "effectors"             : ["head_center_camera_frame", "wrist_flex_link"],
+    "generations"           : 2,
+    "population"            : 25,
+    "elites"                : 4,
+    "collisionSigma"        : 0.5,
+    "chains"                : [["head_pan_joint", "head_tilt_joint"], ["arm_lift_joint", "arm_flex_joint", "arm_roll_joint", "wrist_flex_joint", "wrist_roll_joint"]]
 }
