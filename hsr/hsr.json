@@ -1,8 +1,8 @@
 {
-    "effectors"             : ["head_center_camera_frame", "wrist_flex_link"],
-    "generations"           : 2,
-    "population"            : 25,
+    "effectors"             : ["head_center_camera_frame", "hand_l_distal_link"],
+    "generations"           : 3,
+    "population"            : 50,
     "elites"                : 4,
-    "collisionSigma"        : 0.5,
+    "collisionSigma"        : 0.0,
     "chains"                : [["head_pan_joint", "head_tilt_joint"], ["arm_lift_joint", "arm_flex_joint", "arm_roll_joint", "wrist_flex_joint", "wrist_roll_joint"]]
 }
