@@ -1,7 +1,7 @@
 {
     "IKs" : [
         {   "rootLink"        : "",
-            "effectors"       : ["Head","r_wrist","l_wrist","r_ankle","l_ankle"],
+            "effectors"       : ["Head","r_wrist","l_wrist"],
             "generations"     : 2,
             "population"      : 25,
             "elites"          : 4,
