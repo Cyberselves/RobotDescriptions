@@ -5,18 +5,6 @@
             "generations"     : 2,
             "population"      : 25,
             "elites"          : 4,
-            "collisionSigma"  : 0},
-        {   "rootLink"        : "l_wrist",
-            "effectors"       : ["LFinger13_link","LFinger23_link","LThumb1_link"],
-            "generations"     : 2,
-            "population"      : 25,
-            "elites"          : 4,
-            "collisionSigma"  : 0},
-        {   "rootLink"        : "r_wrist",
-            "effectors"       : ["RFinger13_link","RFinger23_link","RThumb1_link"],
-            "generations"     : 2,
-            "population"      : 25,
-            "elites"          : 4,
             "collisionSigma"  : 0}
     ],
     "pathToMeshes" : "/Users/stuartwilson/Projects/BOW/XRV2/Assets/AnimusRobotPrefabs/Nao/"
