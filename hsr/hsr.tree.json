@@ -564,7 +564,7 @@
         "cRad"   : 0.0,
         "cOrg"   : [0,0,0],
         "cEnd"   : [0,0,0]     },
-    {   "name"   : " ",
+    {   "name"   : "hand_l_distal_link",
         "mesh"   : "__invalid mesh__",
         "scale"  : [1.0,1.0,1.0],
         "cRad"   : 0,
