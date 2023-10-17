@@ -5,7 +5,7 @@
             "generations"     : 2,
             "population"      : 25,
             "elites"          : 4,
-            "collisionSigma"  : 0.5}
+            "collisionSigma"  : 0.1}
     ],
     "pathToMeshes" : "/Users/stuartwilson/Projects/BOW/XRV2/Assets/AnimusRobotPrefabs/Nao/"
 }
