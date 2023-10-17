@@ -2,8 +2,8 @@
     "IKs" : [
         {   "rootLink"        : "",
             "effectors"       : ["head_2_link","gripper_left_grasping_frame","gripper_right_grasping_frame"],
-            "generations"     : 3,
-            "population"      : 50,
+            "generations"     : 2,
+            "population"      : 25,
             "elites"          : 4,
             "collisionSigma"  : 0.5}
     ],
