@@ -1,0 +1,11 @@
+{
+    "IKs" : [
+        {   "rootLink"        : "",
+            "effectors"       : ["head_2_link","gripper_left_grasping_frame","gripper_right_grasping_frame"],
+            "generations"     : 3,
+            "population"      : 50,
+            "elites"          : 4,
+            "collisionSigma"  : 0.5}
+    ],
+    "pathToMeshes" : "/Users/stuartwilson/Projects/BOW/XRV2/Assets/AnimusRobotPrefabs/Nao/"
+}
