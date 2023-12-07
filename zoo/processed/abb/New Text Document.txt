@@ -1,0 +1,1 @@
+python .\xacro.py .\abb\irb5400\xacro\irb5400.xacro -o .\abb\irb5400\irb.urdf
