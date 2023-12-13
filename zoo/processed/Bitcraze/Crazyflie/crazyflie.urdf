@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<robot name="crazyflie">
+  <link name="crazyflie/body">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.025"/>
+      <inertia ixx="0.000016572" ixy="0.00" ixz="0.00" iyy="0.000016656" iyz="0.00000" izz="0.000029262"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh scale="1 1 1" filename="file://meshes\cf2_assembly.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="crazyflie/m1_prop">
+    <origin xyz="0.031 -0.031 0.021" rpy="0 0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <mass value="0.0008"/>
+      <inertia ixx="0.000000002*70" iyy="0.000000167*70" izz="0.000000168*70" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh scale="1 1 1" filename="file://meshes\ccw_prop.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="crazyflie/m2_prop">
+    <origin xyz="-0.031 -0.031 0.021" rpy="0 0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <mass value="0.0008"/>
+      <inertia ixx="0.000000002*50" iyy="0.000000167*50" izz="0.000000168*50" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh scale="1 1 1" filename="file://meshes\cw_prop.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="crazyflie/m3_prop">
+    <origin xyz="-0.031 0.031 0.021" rpy="0 0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <mass value="0.0008"/>
+      <inertia ixx="0.000000002*50" iyy="0.000000167*50" izz="0.000000168*50" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh scale="1 1 1" filename="file://meshes\ccw_prop.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="crazyflie/m4_prop">
+    <origin xyz="0.031 0.031 0.021" rpy="0 0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <mass value="0.0008"/>
+      <inertia ixx="0.000000002*50" iyy="0.000000167*50" izz="0.000000168*50" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh scale="1 1 1" filename="file://meshes\cw_prop.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="crazyflie/m1_joint" type="revolute">
+    <child link="crazyflie/m1_prop"/>
+    <parent link="crazyflie/body"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16"/>
+    <origin xyz="0 0 1"/>
+  </joint>
+  <joint name="crazyflie/m2_joint" type="revolute">
+    <child link="crazyflie/m2_prop"/>
+    <parent link="crazyflie/body"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16"/>
+    <origin xyz="0 0 1"/>
+  </joint>
+  <joint name="crazyflie/m3_joint" type="revolute">
+    <child link="crazyflie/m3_prop"/>
+    <parent link="crazyflie/body"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16"/>
+    <origin xyz="0 0 1"/>
+  </joint>
+  <joint name="crazyflie/m4_joint" type="revolute">
+    <child link="crazyflie/m4_prop"/>
+    <parent link="crazyflie/body"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16"/>
+    <origin xyz="0 0 1"/>
+  </joint>
+</robot>
