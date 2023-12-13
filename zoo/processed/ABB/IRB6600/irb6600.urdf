@@ -153,6 +153,7 @@
         <color rgba="1 1 0 1"/>
       </material>
     </collision>
+    <bow name="arm" functions="goto point"/>
   </link>
   <joint name="joint_1" type="revolute">
     <origin xyz="0 0 0.780" rpy="0 0 0"/>

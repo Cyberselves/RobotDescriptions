@@ -115,7 +115,9 @@
         <xacro:material_abb_yellow />
       </collision>
     </link>
-    <link name="${prefix}tool0"/>
+    <link name="${prefix}tool0">
+        <bow name="arm" functions="goto point"/>
+    </link>
     <!-- end of link list -->
 
     <!-- joint list -->

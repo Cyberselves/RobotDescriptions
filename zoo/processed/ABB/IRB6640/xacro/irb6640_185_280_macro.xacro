@@ -123,6 +123,7 @@
         </geometry>
         <material name="yellow"/>
       </visual>
+      <bow name="arm" functions="goto point"/>
     </link>
     <!-- end of link list -->
 

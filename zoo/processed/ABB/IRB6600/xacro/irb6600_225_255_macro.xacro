@@ -136,6 +136,7 @@
         </geometry>
         <xacro:material_abb_yellow />
       </collision>
+      <bow name="arm" functions="goto point"/>
     </link>
     <!-- end of link list -->
 
