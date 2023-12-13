@@ -1,0 +1,36 @@
+{
+    "extract": [],
+    "path": "",
+    "robots": [
+        {
+            "name": "irb6600",
+            "urdf": "ABB/IRB6600/irb6600.urdf",
+            "meshInDir": "ABB/IRB6600",
+            "outputDir": "ABB/IRB6600"
+        },
+        {
+            "name": "irb4400",
+            "urdf": "ABB/IRB4400/irb4400.urdf",
+            "meshInDir": "ABB/IRB4400",
+            "outputDir": "ABB/IRB4400"
+        },
+        {
+            "name": "irb6640",
+            "urdf": "ABB/IRB6640/irb6640.urdf",
+            "meshInDir": "ABB/IRB6640",
+            "outputDir": "ABB/IRB6640"
+        },
+        {
+            "name": "irb2400",
+            "urdf": "ABB/IRB2400/irb2400.urdf",
+            "meshInDir": "ABB/IRB2400",
+            "outputDir": "ABB/IRB2400"
+        },
+        {
+            "name": "irb5400",
+            "urdf": "ABB/IRB5400/irb5400.urdf",
+            "meshInDir": "ABB/IRB5400",
+            "outputDir": "ABB/IRB5400"
+        }
+    ]
+}
