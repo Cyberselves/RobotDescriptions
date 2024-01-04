@@ -8,13 +8,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/base_link.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/base_link.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/base_link.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/base_link.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -25,13 +25,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_1.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_1.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_1.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_1.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -42,13 +42,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_2.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_2.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_2.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_2.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -59,13 +59,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_3.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_3.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_3.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_3.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -76,13 +76,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_4.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_4.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_4.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_4.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -93,13 +93,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_5.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_5.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_5.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_5.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -110,13 +110,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_6.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_6.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_6.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_6.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -127,12 +127,12 @@
   <link name="link_cylinder">
     <visual name="visual">
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_cylinder.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_cylinder.dae"/>
       </geometry>
     </visual>
     <collision name="collision">
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_cylinder.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_cylinder.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -142,12 +142,12 @@
   <link name="link_piston">
     <visual name="visual">
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/visual/link_piston.dae"/>
+        <mesh filename="package://meshes/irb6600_225_255/visual/link_piston.dae"/>
       </geometry>
     </visual>
     <collision name="collision">
       <geometry>
-        <mesh filename="package://abb_irb6600_support/meshes/irb6600_225_255/collision/link_piston.stl"/>
+        <mesh filename="package://meshes/irb6600_225_255/collision/link_piston.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>

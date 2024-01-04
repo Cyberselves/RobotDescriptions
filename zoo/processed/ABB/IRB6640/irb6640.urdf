@@ -7,7 +7,7 @@
   <link name="base_link">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/base_link.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/base_link.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -22,7 +22,7 @@
   <link name="link_1">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/link_1.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/link_1.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -35,7 +35,7 @@
   <link name="link_2">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/link_2.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/link_2.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -48,7 +48,7 @@
   <link name="link_3">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/link_3.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/link_3.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -61,7 +61,7 @@
   <link name="link_4">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/link_4.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/link_4.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -74,7 +74,7 @@
   <link name="link_5">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/link_5.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/link_5.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -87,7 +87,7 @@
   <link name="link_6">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/link_6.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/link_6.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -101,7 +101,7 @@
   <link name="link_cylinder">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/cylinder_link.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/cylinder_link.dae"/>
       </geometry>
     </collision>
     <visual name="visual">
@@ -114,7 +114,7 @@
   <link name="link_piston">
     <collision name="collision">
       <geometry>
-        <mesh filename="package://meshes/irb6640_185_280/collision/piston_link.stl"/>
+        <mesh filename="package://meshes/irb6640_185_280/collision/piston_link.dae"/>
       </geometry>
     </collision>
     <visual name="visual">

@@ -8,7 +8,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/base_link.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/base_link.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -16,7 +16,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/base_link.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/base_link.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -27,7 +27,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_1.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_1.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -36,7 +36,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_1.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_1.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -47,7 +47,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_2.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_2.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -56,7 +56,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_2.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_2.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -67,7 +67,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_3.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_3.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -76,7 +76,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_3.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_3.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -87,7 +87,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_4.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_4.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -96,7 +96,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_4.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_4.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -107,7 +107,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_5.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_5.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -116,7 +116,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_5.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_5.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -127,7 +127,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_6.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_6.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.1882353 0.1960784 0.2039216 1"/>
@@ -136,7 +136,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_6.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_6.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -147,7 +147,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_lever_a.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_lever_a.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.1882353 0.1960784 0.2039216 1"/>
@@ -156,7 +156,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_lever_a.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_lever_a.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -167,7 +167,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/visual/link_lever_b.dae"/>
+        <mesh filename="package://meshes/irb2400_common/visual/link_lever_b.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.1882353 0.1960784 0.2039216 1"/>
@@ -176,7 +176,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb2400_support/meshes/irb2400_common/collision/link_lever_b.stl"/>
+        <mesh filename="package://meshes/irb2400_common/collision/link_lever_b.dae"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
