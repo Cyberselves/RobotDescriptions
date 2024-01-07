@@ -2,7 +2,7 @@
 <robot name="NextageOpen"
        xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find nextage_description)/urdf/NextageOpen.urdf" />
+  <xacro:include filename="$(find nextage_description)/urdf/NextageOpen.urdf.xacro" />
   <xacro:include filename="$(find nextage_description)/urdf/nxo_gz_camera.xacro" />
  
   <xacro:property name="M_PI" value="3.1415926535897931" />
