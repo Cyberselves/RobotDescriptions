@@ -117,7 +117,7 @@
         </collision>
     </link>
     <link name="${prefix}tool0">
-        <bow name="arm" functions="goto point"/>
+        <bow tags="effector"/>
     </link>
     <!-- end of link list -->
 
