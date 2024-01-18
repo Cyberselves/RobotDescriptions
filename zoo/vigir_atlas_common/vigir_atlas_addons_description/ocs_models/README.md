@@ -1,1 +1,0 @@
-This folder contains srdf descriptions of endeffectors/hands. Used by the OCS to display hands and enable moving them independently of robot arms.
