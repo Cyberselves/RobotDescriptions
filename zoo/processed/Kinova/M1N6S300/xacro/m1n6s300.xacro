@@ -17,7 +17,7 @@
 	xmlns:xacro="http://www.ros.org/wiki/xacro" name="m1n6s300">
 
 
-  <xacro:include filename="$(find kinova_description)/urdf/m1n6s300.xacro"/>
+  <xacro:include filename="$(find kinova_description)/urdf/m1n6s300.macro.xacro"/>
 
   <link name="root"/>
 
