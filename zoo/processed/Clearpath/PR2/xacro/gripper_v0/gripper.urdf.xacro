@@ -224,7 +224,7 @@
 
     <joint name="${side}_gripper_led_joint" type="fixed">
       <!--  Need to check if we need a positive or negative Z term -->
-      <origin xyz="0.0513 0.0 0.0244"/>
+      <origin xyz="0.0513 0.0 .0244"/>
       <parent link="${side}_gripper_palm_link"/>
       <child link="${side}_gripper_led_frame"/>
     </joint>
