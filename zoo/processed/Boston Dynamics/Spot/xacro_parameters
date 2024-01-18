@@ -1,2 +1,4 @@
-
-SPOT_ARM:=1
+{
+ "DEFAULT":"",
+ "Arm":"SPOT_ARM:=1"
+}
