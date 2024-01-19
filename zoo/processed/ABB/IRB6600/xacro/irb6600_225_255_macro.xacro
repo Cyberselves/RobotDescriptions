@@ -108,7 +108,9 @@
         <xacro:material_abb_yellow />
       </collision>
     </link>
-    <link name="${prefix}tool0" />
+    <link name="${prefix}tool0">
+        <bow tags="effector"/>
+    </link>
 
     <!--Cylinder and piston -->
     <link name="${prefix}link_cylinder">
@@ -136,7 +138,6 @@
         </geometry>
         <xacro:material_abb_yellow />
       </collision>
-      <bow name="arm" functions="goto point"/>
     </link>
     <!-- end of link list -->
 
@@ -203,14 +204,6 @@
       <mimic joint="${prefix}joint_2" multiplier="-1.165"/>
     </joint>
     <!-- end of joint list -->
-
-    <!-- ROS base_link to ABB base coordinate system transform -->
-    <link name="${prefix}base" />
-    <joint name="${prefix}base_link-base" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}base"/>
-    </joint>
   </xacro:macro>
 </robot>
 
