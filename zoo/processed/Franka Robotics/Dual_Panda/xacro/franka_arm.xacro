@@ -128,7 +128,9 @@
       <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16"/>
     </joint>
 
-    <link name="${arm_id}_link8"/>
+    <link name="${arm_id}_link8">
+        <bow tags="effector"/>
+    </link>
 
     <joint name="${arm_id}_joint8" type="fixed">
       <origin rpy="0 0 0" xyz="0 0 0.107"/>

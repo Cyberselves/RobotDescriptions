@@ -149,7 +149,9 @@
     </joint>
 
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
-    <link name="${prefix}tool0" />
+    <link name="${prefix}tool0">
+        <bow tags="effector"/>
+    </link>
     <!-- Note: instead of 'flange', we use 'link_5' as parent of this frame
                as it already has the correct orientation and location for
                'tool0'. Using 'flange' here would require additional rotations

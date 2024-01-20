@@ -141,7 +141,8 @@
       </geometry>
       <origin xyz="0 0 -0.010" rpy="0 0 0"/>
       <material name="blue"/>
-    </visual>  
+    </visual>
+    <bow tags="effector"/>
   </link> 
 
   <joint name="j6" type="revolute">

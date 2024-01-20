@@ -149,7 +149,9 @@
     </joint>
 
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
-    <link name="${prefix}tool0" />
+    <link name="${prefix}tool0">
+        <bow tags="effector"/>
+    </link>
     <joint name="${prefix}link_5-tool0" type="fixed">
       <origin xyz="0 0 0" rpy="${pi} ${-pi/2.0} 0" />
       <parent link="${prefix}flange" />

@@ -238,6 +238,7 @@
 					<!--<box size="0.054 0.096 0.030"/>-->
 				</geometry>
 			</collision>
+            <bow tags="effector"/>
 		</link>
 
 		<!-- extensions -->

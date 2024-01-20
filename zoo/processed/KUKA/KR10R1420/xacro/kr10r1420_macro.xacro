@@ -168,7 +168,9 @@
     </joint>
 
     <!-- This frame corresponds to the $TOOL coordinate system in KUKA KRC controllers -->
-    <link name="${prefix}tool0" />
+    <link name="${prefix}tool0">
+        <bow tags="effector"/>
+    </link>
     <joint name="${prefix}flange-tool0" type="fixed">
       <parent link="${prefix}flange"/>
       <child link="${prefix}tool0"/>

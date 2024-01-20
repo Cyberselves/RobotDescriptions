@@ -171,7 +171,9 @@
     
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <!-- This frame corresponds to the $FLANGE coordinate system in KUKA KRC controllers. -->
-    <link name="${prefix}tool0"/>
+    <link name="${prefix}tool0">
+        <bow tags="effector"/>
+    </link>
     <joint name="${prefix}flange-tool0" type="fixed">
       <parent link="${prefix}flange"/>
       <child link="${prefix}tool0"/>

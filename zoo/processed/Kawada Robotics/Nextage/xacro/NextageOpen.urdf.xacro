@@ -117,6 +117,7 @@
       <!-- <inertia ixx="8.07e-05" ixy="-3e-08" ixz="-4.30134e-22" iyy="3.025e-05" iyz="-1.277e-05" izz="6.637e-05"/> -->
       <inertia ixx="1e-3" ixy="0" ixz="0" iyy="1e-3" iyz="0" izz="1e-3"/>
     </inertial>
+    <bow tags="effector"/>
   </link>
 
   <xacro:gazebo_nx_link name="LARM_JOINT0_Link" color="Black" />
@@ -238,6 +239,7 @@
       <origin xyz="-0.048476 -3.2e-06 -0.0388988" rpy="0 -0 0"/>
       <inertia ixx="0.00194072" ixy="1.1e-07" ixz="-0.00042482" iyy="0.00209392" iyz="1.2e-07" izz="0.00035788"/>
     </inertial>
+    <bow tags="effector"/>
   </link>
   <xacro:gazebo_nx_link name="RARM_JOINT0_Link" color="Black" />
   <link name="RARM_JOINT0_Link">
@@ -358,6 +360,7 @@
       <origin xyz="-0.048476 3.2e-06 -0.0388988" rpy="0 -0 0"/>
       <inertia ixx="0.00194072" ixy="-1.1e-07" ixz="-0.00042482" iyy="0.00209392" iyz="-1.2e-07" izz="0.00035788"/>
     </inertial>
+    <bow tags="effector"/>
   </link>
   <xacro:transmission_nx_joint name="CHEST_JOINT0" />
   <joint name="CHEST_JOINT0" type="revolute">
