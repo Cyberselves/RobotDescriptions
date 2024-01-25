@@ -87,6 +87,7 @@
         <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" />
     </joint>
     <link name="front_left_lower_leg">
+        <bow tags="effector"/>
         <visual>
             <geometry>
                 <mesh filename="package://spot_description/meshes/front_left_lower_leg.dae" />
@@ -144,6 +145,7 @@
         <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" />
     </joint>
     <link name="front_right_lower_leg">
+        <bow tags="effector"/>
         <visual>
             <geometry>
                 <mesh filename="package://spot_description/meshes/front_right_lower_leg.dae" />
@@ -201,6 +203,7 @@
         <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" />
     </joint>
     <link name="rear_left_lower_leg">
+        <bow tags="effector"/>
         <visual>
             <geometry>
                 <mesh filename="package://spot_description/meshes/rear_left_lower_leg.dae" />
@@ -258,6 +261,7 @@
         <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" />
     </joint>
     <link name="rear_right_lower_leg">
+        <bow tags="effector"/>
         <visual>
             <geometry>
                 <mesh filename="package://spot_description/meshes/rear_right_lower_leg.dae" />

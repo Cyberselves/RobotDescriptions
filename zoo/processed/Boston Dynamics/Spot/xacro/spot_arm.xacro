@@ -48,6 +48,7 @@
 </link>
 
 <link name="gripper">
+  <bow tags="effector"/>
   <inertial>
     <origin rpy="0 0 0" xyz="-8.366123908053191e-08 0.07051371901138614 0.017123167388316526"/>
     <mass value="5.9780007036604434"/>
