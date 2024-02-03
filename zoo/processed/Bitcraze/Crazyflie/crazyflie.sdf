@@ -59,9 +59,8 @@
             </visual>
         </link>
         <link name="crazyflie/m2_prop">
-            <pose>-0.031 -0.031 0.021 0 0 0</pose>
             <inertial>
-                <pose>0 0 0 0 -0 0</pose>
+                 <pose>-0.031 -0.031 0.021 0 0 0</pose>
                 <mass>0.0008</mass>
                 <inertia>
                     <ixx>0.000000100</ixx>
@@ -73,7 +72,7 @@
                 </inertia>
             </inertial>
             <visual name="crazyflie/m2_visual">
-                <pose>0 0 0 0 -0 0</pose>
+                <pose>-0.031 -0.031 0.021 0 0 0</pose>
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
@@ -83,9 +82,8 @@
             </visual>
         </link>
         <link name="crazyflie/m3_prop">
-            <pose >-0.031 0.031 0.021 0 0 0</pose>
             <inertial>
-                <pose>0 0 0 0 -0 0</pose>
+                <pose >-0.031 0.031 0.021 0 0 0</pose>
                 <mass>0.0008</mass>
                 <inertia>
                     <ixx>0.000000100</ixx>
@@ -97,7 +95,7 @@
                 </inertia>
             </inertial>
             <visual name="crazyflie/m3_visual">
-                <pose>0 0 0 0 -0 0</pose>
+                <pose >-0.031 0.031 0.021 0 0 0</pose>
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
@@ -107,9 +105,8 @@
             </visual>
         </link>
         <link name="crazyflie/m4_prop">
-            <pose>0.031 0.031 0.021 0 0 0</pose>
             <inertial>
-                <pose>0 0 0 0 -0 0</pose>
+                <pose>0.031 0.031 0.021 0 0 0</pose>
                 <mass>0.0008</mass>
                 <inertia>
                     <ixx>0.000000100</ixx>
@@ -121,7 +118,7 @@
                 </inertia>
             </inertial>
             <visual name="crazyflie/m4_visual">
-                <pose>0 0 0 0 -0 0</pose>
+                <pose>0.031 0.031 0.021 0 0 0</pose>
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
@@ -133,6 +130,7 @@
         <joint name="crazyflie/m1_joint" type="revolute">
             <child>crazyflie/m1_prop</child>
             <parent>crazyflie/body</parent>
+            <pose>0 0 0 0 -0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
                 <limit>
@@ -145,9 +143,10 @@
                 </dynamics>
             </axis>
         </joint>
-                <joint name="crazyflie/m2_joint" type="revolute">
+        <joint name="crazyflie/m2_joint" type="revolute">
             <child>crazyflie/m2_prop</child>
             <parent>crazyflie/body</parent>
+            <pose>0 0 0 0 -0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
                 <limit>
@@ -160,9 +159,10 @@
                 </dynamics>
             </axis>
         </joint>
-                <joint name="crazyflie/m3_joint" type="revolute">
+        <joint name="crazyflie/m3_joint" type="revolute">
             <child>crazyflie/m3_prop</child>
             <parent>crazyflie/body</parent>
+            <pose>0 0 0 0 -0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
                 <limit>
@@ -178,6 +178,7 @@
         <joint name="crazyflie/m4_joint" type="revolute">
             <child>crazyflie/m4_prop</child>
             <parent>crazyflie/body</parent>
+            <pose>0 0 0 0 -0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
                 <limit>
