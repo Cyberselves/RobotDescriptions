@@ -58,14 +58,14 @@
       <geometry>
 	      <mesh filename="meshes/reach5mini/visual/BlueRov2.dae" />
       </geometry>
-      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="meshes/reach5mini/visual/BlueRov2.dae" />
       </geometry>
-      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
 
