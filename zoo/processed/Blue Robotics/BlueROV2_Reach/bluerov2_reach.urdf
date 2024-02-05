@@ -56,14 +56,14 @@
   <link name="rov_base_link">
     <visual>
       <geometry>
-	      <mesh filename="meshes/reach5mini/visual/BlueRov2.dae" />
+	      <mesh filename="meshes/reach5mini/visual/bluerov2_noprop.dae" />
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="meshes/reach5mini/visual/BlueRov2.dae" />
+        <mesh filename="meshes/reach5mini/visual/bluerov2_noprop.dae" />
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
