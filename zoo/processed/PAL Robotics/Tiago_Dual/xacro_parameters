@@ -1,4 +1,4 @@
 {
  "DEFAULT":"",
- "Gripper":"end_effector_left:=pal-gripper end_effector_right:=pal-gripper"
+ "Gripper":"end_effector_left:='pal-gripper' end_effector_right:='pal-gripper'"
 }
