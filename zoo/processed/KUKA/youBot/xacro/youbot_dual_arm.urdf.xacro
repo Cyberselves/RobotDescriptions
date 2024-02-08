@@ -13,7 +13,7 @@
   <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.urdf.xacro" />
 
   <!-- youbot plate -->
-  <xacro:include filename="$(find youbot_description)/urdf/youbot_plate/plate.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/youbot_plate/plate.urdf.xacro" /> 
 
   <!-- youbot arm -->
   <xacro:include filename="$(find youbot_description)/urdf/youbot_arm/arm.urdf.xacro"/>

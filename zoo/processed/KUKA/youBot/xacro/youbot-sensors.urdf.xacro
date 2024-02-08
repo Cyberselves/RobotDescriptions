@@ -13,7 +13,7 @@
   <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.urdf.xacro" />
 
   <!-- youbot plate -->
-  <xacro:include filename="$(find youbot_description)/urdf/youbot_plate/plate.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/youbot_plate/plate.urdf.xacro" /> 
 
   <!-- youbot arm -->
   <xacro:include filename="$(find youbot_description)/urdf/youbot_arm/arm.urdf.xacro"/>
@@ -25,7 +25,7 @@
   <xacro:include filename="$(find youbot_description)/gazebo/gazebo.urdf.xacro" />
   
   <!-- materials for visualization -->
-  <xacro:include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />				     
 
   <!-- Now we can start using the macros included above to define the actual youbot -->
 
@@ -70,11 +70,10 @@
   </xacro:sensor_angle>
   
   <!-- ASUS Xtion on arm sensor angle -->
-<!--
-  <xacro:asus_xtion_camera name="openni" parent="arm_sensor_angle_part2_link"  tilt="0.0">
+
+  <!-- <xacro:asus_xtion_camera name="openni" parent="arm_sensor_angle_part2_link"  tilt="0.0">
     <origin xyz="0.01 0.0 0.0" rpy="${M_PI} 0.0 ${M_PI}" />
-  </xacro:asus_xtion_camera> 
--->
+  </xacro:asus_xtion_camera> -->
 
 
   <!-- tower -->
