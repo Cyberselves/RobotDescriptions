@@ -14,12 +14,7 @@
 
 
   <xacro:macro name="talos_leg" params="prefix reflect flexibility:=false">
-    <xacro:unless value="$(arg test)">
-      <xacro:include filename="$(find talos_description_calibration)/urdf/calibration/leg_${prefix}.xacro" />
-    </xacro:unless>
-    <xacro:if value="$(arg test)">
-      <xacro:include filename="$(find talos_description)/test/calibration/leg_${prefix}.xacro" />
-    </xacro:if>
+  <xacro:include filename="$(find talos_description_calibration)/urdf/calibration/leg_${prefix}.xacro" />
 
 
     <xacro:if value="${flexibility}">
