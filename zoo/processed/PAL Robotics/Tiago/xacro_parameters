@@ -1,0 +1,4 @@
+{
+ "DEFAULT":"",
+ "Gripper":"end_effector:=pal-gripper"
+}
