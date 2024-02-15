@@ -50,7 +50,11 @@
 
 
     <link name="left_ur_base_link"/>
-	<xacro:ur5e_robot prefix="left_" base_link="left_ur_base_link" end_link="left_ee_link"/>
+    <xacro:ur5e_robot prefix="left_"
+                      base_link="left_ur_base_link"
+                      end_link="left_ee_link"
+                      joint_limits_parameters_file='joint_limits_left.yaml'
+    />
 
     <link name="left_ee_link"/>
     <joint name="left_gripper_fixed_joint" type="fixed">
@@ -71,7 +75,11 @@
     </joint>
 
     <link name="right_ur_base_link"/>
-	<xacro:ur5e_robot prefix="right_" base_link="right_ur_base_link" end_link="right_ee_link"/>
+	<xacro:ur5e_robot prefix="right_"
+                      base_link="right_ur_base_link"
+                      end_link="right_ee_link"
+                      joint_limits_parameters_file='joint_limits_right.yaml'
+    />
     <link name="right_ee_link"/>
 
     <joint name="right_gripper_fixed_joint" type="fixed">
