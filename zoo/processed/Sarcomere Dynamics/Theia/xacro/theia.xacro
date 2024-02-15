@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+
+<robot name="theia" xmlns:xacro="http://ros.org/wiki/xacro">
+  	<xacro:include filename="artus_dex_left_macro.xacro"/>
+  	<xacro:include filename="artus_dex_right_macro.xacro"/>
+ 	<xacro:include filename="inc/ur5e_macro.xacro"/>
+    <xacro:include filename="elephantbot_mycobot320_macro.xacro"/>
+
+	<link name="base_link"/>
+
+    <joint name="table_base" type="fixed">
+        <parent link="base_link"/>
+        <child link="table"/>
+        <origin rpy="0 0 0" xyz="0.2 0 -0.4"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="table">
+        <visual>
+            <geometry>
+                <box size="0.6 1.2 0.8"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.6 1.2 0.8"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="150.0"/>
+            <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+            <inertia ixx="0.00443333156" ixy="0.0" ixz="0.0" iyy="0.00443333156" iyz="0.0" izz="0.0072"/>
+        </inertial>
+    </link>
+
+    <joint name="head_fixed_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="head_base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+    </joint>
+    <link name="head_base_link"/>
+
+    <xacro:elephantbot_mycobot_pro_320 base_link="head_base_link"/>
+
+	<joint name="left_ur_fixed_joint" type="fixed">
+      <parent link="base_link" />
+      <child link="left_ur_base_link" />
+      <origin xyz="0 0.4 0" rpy="0 0 0" />
+    </joint>
+
+
+    <link name="left_ur_base_link"/>
+	<xacro:ur5e_robot prefix="left_" base_link="left_ur_base_link" end_link="left_ee_link"/>
+
+    <link name="left_ee_link"/>
+    <joint name="left_gripper_fixed_joint" type="fixed">
+      <parent link="left_ee_link" />
+      <child link="left_gripper_base" />
+      <origin xyz="0 0 0" rpy="1.5708 0 1.5708" />
+    </joint>
+
+    <link name="left_gripper_base">
+        <bow tags="gripper"/>
+    </link>
+    <xacro:artus_dex_left base_link="left_gripper_base" mesh_dir="left_artus"/>
+
+	<joint name="right_ur_fixed_joint" type="fixed">
+      <parent link="base_link" />
+      <child link="right_ur_base_link" />
+      <origin xyz="0 -0.4 0" rpy="0 0 3.148"/>
+    </joint>
+
+    <link name="right_ur_base_link"/>
+	<xacro:ur5e_robot prefix="right_" base_link="right_ur_base_link" end_link="right_ee_link"/>
+    <link name="right_ee_link"/>
+
+    <joint name="right_gripper_fixed_joint" type="fixed">
+      <parent link="right_ee_link" />
+      <child link="right_gripper_base" />
+      <origin xyz="0 0 0" rpy="1.5708 0 -1.5708" />
+    </joint>
+
+    <link name="right_gripper_base">
+        <bow tags="gripper"/>
+    </link>
+    <xacro:artus_dex_right base_link="right_gripper_base" mesh_dir="right_artus"/>
+</robot>
