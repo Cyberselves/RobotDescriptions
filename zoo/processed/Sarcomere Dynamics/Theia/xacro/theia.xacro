@@ -38,16 +38,20 @@
         <child link="head_base_link"/>
         <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
     </joint>
-    <link name="head_base_link"/>
 
-    <xacro:elephantbot_mycobot_pro_320 base_link="head_base_link"/>
+    <link name="head_base_link">
+        <bow tags="limb"/>
+    </link>
+    <xacro:elephantbot_mycobot_pro_320 base_link="head_base_link" end_link="head_end_link"/>
+    <link name="head_end_link">
+        <bow tags="gripper"/>
+    </link>
 
 	<joint name="left_ur_fixed_joint" type="fixed">
       <parent link="base_link" />
       <child link="left_ur_base_link" />
       <origin xyz="0 0.4 0" rpy="0 0 0" />
     </joint>
-
 
     <link name="left_ur_base_link"/>
     <xacro:ur5e_robot prefix="left_"
@@ -87,7 +91,6 @@
       <child link="right_gripper_base" />
       <origin xyz="0 0 0" rpy="1.5708 0 -1.5708" />
     </joint>
-
     <link name="right_gripper_base">
         <bow tags="gripper"/>
     </link>

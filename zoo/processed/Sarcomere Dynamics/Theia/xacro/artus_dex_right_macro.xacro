@@ -346,6 +346,7 @@
 				<mass value="0" />
 				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
 			</inertial>
+			<bow tags="effector"/>
 		</link>
 
 		<joint name="Rpinky_34" type="revolute">
@@ -474,6 +475,7 @@
 				<mass value="0" />
 				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
 			</inertial>
+			<bow tags="effector"/>
 		</link>
 
 		<joint name="Rring_34" type="revolute">
@@ -602,6 +604,7 @@
 				<mass value="0" />
 				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
 			</inertial>
+			<bow tags="effector"/>
 		</link>
 
 		<joint name="Rmiddle_34" type="revolute">
@@ -730,6 +733,7 @@
 				<mass value="0" />
 				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
 			</inertial>
+			<bow tags="effector"/>
 		</link>
 
 		<joint name="Rindex_34" type="revolute">
@@ -854,10 +858,11 @@
 				</geometry>
 			</collision>
 			<inertial>
-			<origin xyz="0 0 0" rpy="0 0 0"/>
-			<mass value="0" />
-			<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="0" />
+				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
 			</inertial>
+			<bow tags="effector"/>
 		</link>
 
 		<joint name="Rthumb_34" type="revolute">
