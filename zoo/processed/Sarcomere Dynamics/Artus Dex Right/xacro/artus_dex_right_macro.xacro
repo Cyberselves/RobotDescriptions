@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-	<xacro:macro name="artus_dex_right" params="base_link mesh_dir">
+	<xacro:macro name="artus_dex_right" params="base_link mesh_dir:=''">
 
 		<joint name="virtual" type="fixed">
 			<origin xyz="0 0 0" rpy="0 0 0"/>
