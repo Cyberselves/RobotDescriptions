@@ -18,7 +18,7 @@ joint_limits:
     max_position: !degrees  360.0
     max_velocity: !degrees  180.0
     min_position: !degrees -360.0
-    default_position: !degrees 0.0
+    default_position: !degrees -32
   shoulder_lift:
     # acceleration limits are not publicly available
     has_acceleration_limits: false
@@ -29,7 +29,7 @@ joint_limits:
     max_position: !degrees  360.0
     max_velocity: !degrees  180.0
     min_position: !degrees -360.0
-    default_position: !degrees -0.0
+    default_position: !degrees -80.0
   elbow_joint:
     # acceleration limits are not publicly available
     has_acceleration_limits: false
@@ -50,7 +50,7 @@ joint_limits:
     max_position: !degrees  180.0
     max_velocity: !degrees  180.0
     min_position: !degrees -180.0
-    default_position: !degrees -0.0
+    default_position: !degrees 120.0
   wrist_1:
     # acceleration limits are not publicly available
     has_acceleration_limits: false
@@ -61,7 +61,7 @@ joint_limits:
     max_position: !degrees  360.0
     max_velocity: !degrees  180.0
     min_position: !degrees -360.0
-    default_position: !degrees -0
+    default_position: !degrees -40
   wrist_2:
     # acceleration limits are not publicly available
     has_acceleration_limits: false
@@ -72,7 +72,7 @@ joint_limits:
     max_position: !degrees  360.0
     max_velocity: !degrees  180.0
     min_position: !degrees -360.0
-    default_position: !degrees 0
+    default_position: !degrees 90
   wrist_3:
     # acceleration limits are not publicly available
     has_acceleration_limits: false
@@ -83,4 +83,4 @@ joint_limits:
     max_position: !degrees  360.0
     max_velocity: !degrees  180.0
     min_position: !degrees -360.0
-    default_position: !degrees -0
+    default_position: !degrees -90
