@@ -2,7 +2,7 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="Lite3">
+<robot name="Lite3" locomotion="quadruped">
   <link name="TORSO">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -116,7 +116,7 @@
     <limit lower="0.524" upper="2.792" effort="36" velocity="17.1" />
   </joint>
 
-   <link name="FL_FOOT">
+   <link name="FL_FOOT" contact="foot">
     <contact>
       <friction_anchor/>
       <stiffness value="30000.0"/>
@@ -243,7 +243,7 @@
     <limit lower="0.524" upper="2.792" effort="36" velocity="17.1" />
   </joint>
 
-    <link name="FR_FOOT">
+    <link name="FR_FOOT" contact="foot">
     <contact>
       <friction_anchor/>
       <stiffness value="30000.0"/>
@@ -368,7 +368,7 @@
     <limit lower="0.524" upper="2.792" effort="36" velocity="17.1" />
   </joint>
 
-  <link name="HL_FOOT">
+  <link name="HL_FOOT" contact="foot">
     <contact>
       <friction_anchor/>
       <stiffness value="30000.0"/>
@@ -493,7 +493,7 @@
     <limit lower="0.524" upper="2.792" effort="36" velocity="17.1" />
   </joint>
 
-  <link name="HR_FOOT">
+  <link name="HR_FOOT" contact="foot">
     <contact>
       <friction_anchor/>
       <stiffness value="30000.0"/>
