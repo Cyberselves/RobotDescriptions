@@ -26,6 +26,22 @@
     </collision>
   </link>
 
+  <link name="FrontCamera_frame"/>
+  <joint name="FrontCamera_fixed_joint" type="fixed">
+    <parent link="TORSO"/>
+    <child link="FrontCamera_frame"/>
+    <origin rpy="0 0 0" xyz="0.28 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+
+  <link name="RearCamera_frame"/>
+  <joint name="RearCamera_fixed_joint" type="fixed">
+    <parent link="TORSO"/>
+    <child link="RearCamera_frame"/>
+    <origin rpy="0 0 3.141" xyz="-0.28 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+
   <!--!!!!!!!!!!!! Front Left Leg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
   <link name="FL_HIP">
@@ -116,7 +132,7 @@
     <limit lower="0.524" upper="2.792" effort="36" velocity="17.1" />
   </joint>
 
-   <link name="FL_FOOT" contact="foot">
+  <link name="FL_FOOT" contact="foot">
     <contact>
       <friction_anchor/>
       <stiffness value="30000.0"/>
@@ -149,7 +165,7 @@
     <parent link="FL_SHANK"/>
     <child link="FL_FOOT"/>
     <origin xyz="0 0 -0.21012"/>
-     
+
   </joint>
 
   <!--!!!!!!!!!!!! Front Right Leg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
@@ -176,7 +192,7 @@
     </collision>
   </link>
   <joint name="FR_HipX_joint"
-    type="revolute">
+         type="revolute">
     <origin xyz="0.1745 -0.062 0" rpy="0 0 0" />
     <parent link="TORSO" />
     <child link="FR_HIP" />
@@ -243,7 +259,7 @@
     <limit lower="0.524" upper="2.792" effort="36" velocity="17.1" />
   </joint>
 
-    <link name="FR_FOOT" contact="foot">
+  <link name="FR_FOOT" contact="foot">
     <contact>
       <friction_anchor/>
       <stiffness value="30000.0"/>
@@ -257,7 +273,7 @@
         <sphere radius="0.022" />
       </geometry>
     </collision>
-     <visual>
+    <visual>
       <origin xyz="0 0 0" rpy="-1.57 0 0" />
       <geometry>
         <sphere radius="0.022" />
@@ -276,11 +292,11 @@
     <parent link="FR_SHANK"/>
     <child link="FR_FOOT"/>
     <origin xyz="0 0 -0.21012"/>
-     
+
   </joint>
 
   <!--!!!!!!!!!!!! Back Left Leg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-   <link name="HL_HIP">
+  <link name="HL_HIP">
     <inertial>
       <origin xyz="0.010905 -0.012636 0.001051" rpy="0 0 0" />
       <mass value="0.550" />
@@ -401,7 +417,7 @@
     <parent link="HL_SHANK"/>
     <child link="HL_FOOT"/>
     <origin xyz="0 0 -0.21012"/>
-     
+
   </joint>
   <!--!!!!!!!!!!!! Back Right Leg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
@@ -507,7 +523,7 @@
         <sphere radius="0.022" />
       </geometry>
     </collision>
-      <visual>
+    <visual>
       <origin xyz="0 0 0" rpy="-1.57 0 0" />
       <geometry>
         <sphere radius="0.022" />
@@ -526,7 +542,53 @@
     <parent link="HR_SHANK"/>
     <child link="HR_FOOT"/>
     <origin xyz="0 0 -0.21012"/>
-     
+
   </joint>
+
+  <gazebo reference="FrontCamera_frame">
+    <sensor name="FrontCamera" type="camera">
+      <update_rate>5.0</update_rate>
+      <camera name="front_camera">
+        <horizontal_fov>1.06290551</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.3</near>
+          <far>500</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="RearCamera_frame">
+    <sensor name="RearCamera" type="camera">
+      <update_rate>5.0</update_rate>
+      <camera name="rear_camera">
+        <horizontal_fov>1.06290551</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.3</near>
+          <far>500</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </gazebo>
 
 </robot>
