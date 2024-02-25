@@ -162,7 +162,7 @@
             </collision>
         </link>
 
-        <joint name="cobot_joint6output_to_joint6" type="revolute">
+        <joint name="tool_joint" type="revolute">
             <parent link="cobot_link6"/>
             <child link="${end_link}"/>
             <origin xyz= "0 0 0" rpy = "0 0 0"/>

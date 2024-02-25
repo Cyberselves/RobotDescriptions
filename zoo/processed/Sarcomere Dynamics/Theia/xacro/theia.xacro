@@ -34,7 +34,7 @@
     </link>
 
     <joint name="head_fixed_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="table"/>
         <child link="head_base_link"/>
         <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
     </joint>
@@ -48,7 +48,7 @@
     </link>
 
 	<joint name="left_ur_fixed_joint" type="fixed">
-      <parent link="base_link" />
+      <parent link="table" />
       <child link="left_ur_base_link" />
       <origin xyz="0 0.4 0" rpy="0 0 0" />
     </joint>
@@ -73,7 +73,7 @@
     <xacro:artus_dex_left base_link="left_gripper_base" mesh_dir="left_artus"/>
 
 	<joint name="right_ur_fixed_joint" type="fixed">
-      <parent link="base_link" />
+      <parent link="table" />
       <child link="right_ur_base_link" />
       <origin xyz="0 -0.4 0" rpy="0 0 3.148"/>
     </joint>
