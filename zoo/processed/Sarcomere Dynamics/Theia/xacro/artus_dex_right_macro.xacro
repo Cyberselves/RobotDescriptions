@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 	<xacro:macro name="artus_dex_right" params="prefix base_link mesh_dir">
 
-		<joint name="virtual" type="fixed">
+		<joint name="${prefix}virtual" type="fixed">
 			<origin xyz="0 0 0" rpy="0 0 0"/>
 			<parent link="${base_link}"/>
 			<child link="${prefix}forearm_and_palm_subassembly"/>
@@ -256,7 +256,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_1">
+		<link name="${prefix}part_1_1">
 			<visual>
 				<origin xyz="-0.0049999999999999766853 0 -0.018500000000000103167" rpy="0 0 0" />
 				<geometry>
