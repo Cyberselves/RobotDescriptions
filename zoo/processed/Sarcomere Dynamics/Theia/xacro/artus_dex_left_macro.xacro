@@ -244,8 +244,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -267,8 +267,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -290,8 +290,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -313,8 +313,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 			<bow tags="effector"/>
 		</link>
@@ -373,8 +373,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -396,8 +396,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -419,8 +419,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -442,8 +442,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 			<bow tags="effector"/>
 		</link>
@@ -502,8 +502,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -525,8 +525,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -548,8 +548,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -571,8 +571,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 			<bow tags="effector"/>
 		</link>
@@ -631,8 +631,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -654,8 +654,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -677,8 +677,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -700,8 +700,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 			<bow tags="effector"/>
 		</link>
@@ -760,8 +760,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -783,8 +783,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -806,8 +806,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 		</link>
 
@@ -829,8 +829,8 @@
 			</collision>
 			<inertial>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<mass value="0" />
-				<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+				<mass value="0.025" />
+				<inertia ixx="1.666e-7" ixy="0" ixz="0" iyy="1.666e-7" iyz="0" izz="1.666e-7" />
 			</inertial>
 			<bow tags="effector"/>
 		</link>
