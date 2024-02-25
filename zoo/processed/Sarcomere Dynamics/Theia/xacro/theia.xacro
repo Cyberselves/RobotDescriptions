@@ -48,6 +48,13 @@
     <link name="head_end_link">
         <bow tags="gripper"/>
     </link>
+    <joint name="HeadCamera_fixed_joint" type="fixed">
+        <parent link="head_end_link"/>
+        <child link="FrontCamera_frame"/>
+        <origin rpy="0 0 0" xyz="0.28 0 0"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <link name="FrontCamera_frame"/>
 
 	<joint name="left_ur_fixed_joint" type="fixed">
       <parent link="table" />
@@ -98,4 +105,26 @@
     </link>
     <xacro:artus_dex_right base_link="right_gripper_base" mesh_dir="right_artus"/>
 
+    <gazebo reference="HeadCamera_frame">
+        <sensor name="HeadCamera" type="camera">
+          <update_rate>5.0</update_rate>
+          <camera name="head_camera">
+            <horizontal_fov>1.06290551</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.3</near>
+              <far>500</far>
+            </clip>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.007</stddev>
+            </noise>
+          </camera>
+        </sensor>
+    </gazebo>
 </robot>
