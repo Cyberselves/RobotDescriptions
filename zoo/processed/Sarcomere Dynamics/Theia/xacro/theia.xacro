@@ -62,7 +62,9 @@
       <origin xyz="0.1 0.4 0" rpy="0 0 0" />
     </joint>
 
-    <link name="left_ur_base_link"/>
+    <link name="left_ur_base_link">
+        <bow tags="limb"/>
+    </link>
     <xacro:ur5e_robot prefix="left_"
                       base_link="left_ur_base_link"
                       end_link="left_ee_link"
@@ -87,7 +89,9 @@
       <origin xyz="0.1 -0.4 0" rpy="0 0 3.148"/>
     </joint>
 
-    <link name="right_ur_base_link"/>
+    <link name="right_ur_base_link">
+        <bow tags="limb"/>
+    </link>
 	<xacro:ur5e_robot prefix="right_"
                       base_link="right_ur_base_link"
                       end_link="right_ee_link"
