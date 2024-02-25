@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-	<xacro:macro name="artus_dex_left" params="base_link mesh_dir">
+	<xacro:macro name="artus_dex_left" params="prefix base_link mesh_dir">
 
-		<joint name="virtual" type="fixed">
+		<joint name="${prefix}virtual" type="fixed">
 			<origin xyz="0 0 0" rpy="0 0 0"/>
 			<parent link="${base_link}"/>
-			<child link="left_forearm_and_palm_subassembly"/>
+			<child link="${prefix}forearm_and_palm_subassembly"/>
 		</joint>
 
-		<link name="left_forearm_and_palm_subassembly">
+		<link name="${prefix}forearm_and_palm_subassembly">
 			<visual>
 				<origin xyz="0.107896 0.172537 0.011139" rpy="0 -0 3.141592653589793116" />
 				<geometry>
@@ -226,7 +226,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_3">
+		<link name="${prefix}part_1_3">
 			<visual>
 				<origin xyz="-0.0049999999999999766853 0 -0.018500000000000103167" rpy="0 0 0" />
 				<geometry>
@@ -249,7 +249,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_8">
+		<link name="${prefix}part_1_8">
 			<visual>
 				<origin xyz="-0.028552407289709647031 -0.0078589767938891941235 -0.006000000000005112355" rpy="-1.570796326794896558 0 0" />
 				<geometry>
@@ -272,7 +272,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_9">
+		<link name="${prefix}part_1_9">
 			<visual>
 				<origin xyz="-0.017524803018038770386 -0.0071295923980055951955 -0.005250000000000198952" rpy="-1.5707963267948970021 0 0" />
 				<geometry>
@@ -295,7 +295,7 @@
 			</inertial>
 		</link>
 
-		<link name="d1_urdf_mk_5_3">
+		<link name="${prefix}d1_urdf_mk_5_3">
 			<visual>
 				<origin xyz="-0.0090000000000002022826 -0.0060000000000000001249 -0.0047499999999967290609" rpy="-1.5707963267948961139 0 0" />
 				<geometry>
@@ -319,43 +319,43 @@
 			<bow tags="effector"/>
 		</link>
 
-		<joint name="Lindex_34" type="revolute">
+		<joint name="${prefix}Lindex_34" type="revolute">
 			<origin xyz="-0.024999999999999855671 0 -0.00049999999999991717736" rpy="0 0 0" />
-			<parent link="part_1_9" />
-			<child link="d1_urdf_mk_5_3" />
+			<parent link="${prefix}part_1_9" />
+			<child link="${prefix}d1_urdf_mk_5_3" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lindex_23" type="revolute">
+		<joint name="${prefix}Lindex_23" type="revolute">
 			<origin xyz="-0.038000000000001032952 0.0007499999999999017869 -0.00074999999999991739941" rpy="0 0 0" />
-			<parent link="part_1_8" />
-			<child link="part_1_9" />
+			<parent link="${prefix}part_1_8" />
+			<child link="${prefix}part_1_9" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lindex_12" type="revolute">
+		<joint name="${prefix}Lindex_12" type="revolute">
 			<origin xyz="-0.014749999999999902078 -0.0060000000000000053291 -0.0095000000000000240502" rpy="1.570796326794896558 0 0" />
-			<parent link="part_1_3" />
-			<child link="part_1_8" />
+			<parent link="${prefix}part_1_3" />
+			<child link="${prefix}part_1_8" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lindex_01" type="revolute">
+		<joint name="${prefix}Lindex_01" type="revolute">
 			<origin xyz="0.029718 0.169480 0.008239" rpy="0 0 -1.6406094968746700591" />
-			<parent link="left_forearm_and_palm_subassembly" />
-			<child link="part_1_3" />
+			<parent link="${prefix}forearm_and_palm_subassembly" />
+			<child link="${prefix}part_1_3" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="-0.29670597283903604735" upper="0.29670597283903604735"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<link name="part_1_2">
+		<link name="${prefix}part_1_2">
 			<visual>
 				<origin xyz="-0.0049999999999999766853 0 -0.018500000000000099698" rpy="0 0 0" />
 				<geometry>
@@ -378,7 +378,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_7">
+		<link name="${prefix}part_1_7">
 			<visual>
 				<origin xyz="-0.028552407289709619276 -0.0078589767938891941235 -0.0060000000000050845994" rpy="-1.570796326794896558 0 0" />
 				<geometry>
@@ -401,7 +401,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_11">
+		<link name="${prefix}part_1_11">
 			<visual>
 				<origin xyz="-0.017524803018038798141 -0.0071295923980049134491 -0.0052500000000001711964" rpy="-1.5707963267948970021 0 0" />
 				<geometry>
@@ -424,7 +424,7 @@
 			</inertial>
 		</link>
 
-		<link name="d1_urdf_mk_5_4">
+		<link name="${prefix}d1_urdf_mk_5_4">
 			<visual>
 				<origin xyz="-0.0090000000000002022826 -0.006000000000000002727 -0.0047499999999967013053" rpy="-1.5707963267948961139 0 0" />
 				<geometry>
@@ -448,43 +448,43 @@
 			<bow tags="effector"/>
 		</link>
 
-		<joint name="Lring_34" type="revolute">
+		<joint name="${prefix}Lring_34" type="revolute">
 			<origin xyz="-0.024999999999999966693 0 -0.00050000000000002819966" rpy="0 0 0" />
-			<parent link="part_1_11" />
-			<child link="d1_urdf_mk_5_4" />
+			<parent link="${prefix}part_1_11" />
+			<child link="${prefix}d1_urdf_mk_5_4" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lring_23" type="revolute">
+		<joint name="${prefix}Lring_23" type="revolute">
 			<origin xyz="-0.038000000000001032952 0.00074999999999993821609 -0.00074999999999994515498" rpy="0 0 0" />
-			<parent link="part_1_7" />
-			<child link="part_1_11" />
+			<parent link="${prefix}part_1_7" />
+			<child link="${prefix}part_1_11" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lring_12" type="revolute">
+		<joint name="${prefix}Lring_12" type="revolute">
 			<origin xyz="-0.014749999999999957589 -0.0060000000000000330846 -0.0095000000000000413974" rpy="1.570796326794896558 0 0" />
-			<parent link="part_1_2" />
-			<child link="part_1_7" />
+			<parent link="${prefix}part_1_2" />
+			<child link="${prefix}part_1_7" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lring_01" type="revolute">
+		<joint name="${prefix}Lring_01" type="revolute">
 			<origin xyz="-0.013269 0.168093 0.008239" rpy="0 0 -1.50098315671495941" />
-			<parent link="left_forearm_and_palm_subassembly" />
-			<child link="part_1_2" />
+			<parent link="${prefix}forearm_and_palm_subassembly" />
+			<child link="${prefix}part_1_2" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="-0.29670597283903604735" upper="0.29670597283903604735"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<link name="part_1_4">
+		<link name="${prefix}part_1_4">
 			<visual>
 				<origin xyz="-0.0049999999999999766853 0 -0.018500000000000099698" rpy="0 0 0" />
 				<geometry>
@@ -507,7 +507,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_5">
+		<link name="${prefix}part_1_5">
 			<visual>
 				<origin xyz="-0.028552407289709674787 -0.0078589767938891941235 -0.0060000000000051401106" rpy="-1.570796326794896558 0 0" />
 				<geometry>
@@ -530,7 +530,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_10">
+		<link name="${prefix}part_1_10">
 			<visual>
 				<origin xyz="-0.017524803018038770386 -0.0071295923980049125818 -0.005250000000000198952" rpy="-1.5707963267948970021 0 0" />
 				<geometry>
@@ -553,7 +553,7 @@
 			</inertial>
 		</link>
 
-		<link name="d1_urdf_mk_5_2">
+		<link name="${prefix}d1_urdf_mk_5_2">
 			<visual>
 				<origin xyz="-0.0090000000000001745271 -0.0059999999999999645631 -0.0047499999999967013053" rpy="-1.5707963267948961139 0 0" />
 				<geometry>
@@ -577,43 +577,43 @@
 			<bow tags="effector"/>
 		</link>
 
-		<joint name="Lmiddle_34" type="revolute">
+		<joint name="${prefix}Lmiddle_34" type="revolute">
 			<origin xyz="-0.024999999999999994449 0 -0.00050000000000000044409" rpy="0 0 0" />
-			<parent link="part_1_10" />
-			<child link="d1_urdf_mk_5_2" />
+			<parent link="${prefix}part_1_10" />
+			<child link="${prefix}d1_urdf_mk_5_2" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lmiddle_23" type="revolute">
+		<joint name="${prefix}Lmiddle_23" type="revolute">
 			<origin xyz="-0.038000000000001060707 0.00074999999999993648137 -0.00075000000000000066613" rpy="0 0 0" />
-			<parent link="part_1_5" />
-			<child link="part_1_10" />
+			<parent link="${prefix}part_1_5" />
+			<child link="${prefix}part_1_10" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lmiddle_12" type="revolute">
+		<joint name="${prefix}Lmiddle_12" type="revolute">
 			<origin xyz="-0.014749999999999929834 -0.0059999999999999775735 -0.0095000000000000413974" rpy="1.570796326794896558 0 0" />
-			<parent link="part_1_4" />
-			<child link="part_1_5" />
+			<parent link="${prefix}part_1_4" />
+			<child link="${prefix}part_1_5" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lmiddle_01" type="revolute">
+		<joint name="${prefix}Lmiddle_01" type="revolute">
 			<origin xyz="0.008096 0.172537 0.011239" rpy="0 0 -1.5707963267948421571" />
-			<parent link="left_forearm_and_palm_subassembly" />
-			<child link="part_1_4" />
+			<parent link="${prefix}forearm_and_palm_subassembly" />
+			<child link="${prefix}part_1_4" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="-0.29670597283903604735" upper="0.29670597283903604735"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<link name="part_1_1">
+		<link name="${prefix}part_1_1">
 			<visual>
 				<origin xyz="-0.0049999999999999766853 0 -0.018500000000000099698" rpy="0 0 0" />
 				<geometry>
@@ -636,7 +636,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_6">
+		<link name="${prefix}part_1_6">
 			<visual>
 				<origin xyz="-0.028552407289709619276 -0.0078589767938891108567 -0.006000000000005112355" rpy="-1.570796326794896558 0 0" />
 				<geometry>
@@ -659,7 +659,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_12">
+		<link name="${prefix}part_1_12">
 			<visual>
 				<origin xyz="-0.017524803018038770386 -0.0071295923980055934607 -0.0052500000000001711964" rpy="-1.5707963267948970021 0 0" />
 				<geometry>
@@ -682,7 +682,7 @@
 			</inertial>
 		</link>
 
-		<link name="d1_urdf_mk_5_1">
+		<link name="${prefix}d1_urdf_mk_5_1">
 			<visual>
 				<origin xyz="-0.0090000000000001745271 -0.0059999999999999636957 -0.0047499999999966735498" rpy="-1.5707963267948961139 0 0" />
 				<geometry>
@@ -706,43 +706,43 @@
 			<bow tags="effector"/>
 		</link>
 
-		<joint name="Lpinky_34" type="revolute">
+		<joint name="${prefix}Lpinky_34" type="revolute">
 			<origin xyz="-0.024999999999999938938 0 -0.00050000000000000044409" rpy="0 0 0" />
-			<parent link="part_1_12" />
-			<child link="d1_urdf_mk_5_1" />
+			<parent link="${prefix}part_1_12" />
+			<child link="${prefix}d1_urdf_mk_5_1" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lpinky_23" type="revolute">
+		<joint name="${prefix}Lpinky_23" type="revolute">
 			<origin xyz="-0.038000000000001032952 0.00075000000000002148282 -0.00074999999999997291056" rpy="0 0 0" />
-			<parent link="part_1_6" />
-			<child link="part_1_12" />
+			<parent link="${prefix}part_1_6" />
+			<child link="${prefix}part_1_12" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lpinky_12" type="revolute">
+		<joint name="${prefix}Lpinky_12" type="revolute">
 			<origin xyz="-0.014749999999999985345 -0.0059999999999999498179 -0.0095000000000000396627" rpy="1.570796326794896558 0 0" />
-			<parent link="part_1_1" />
-			<child link="part_1_6" />
+			<parent link="${prefix}part_1_1" />
+			<child link="${prefix}part_1_6" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lpinky_01" type="revolute">
+		<joint name="${prefix}Lpinky_01" type="revolute">
 			<origin xyz="-0.033723 0.160576 0.005239" rpy="0 0 -1.4486232791552937638" />
-			<parent link="left_forearm_and_palm_subassembly" />
-			<child link="part_1_1" />
+			<parent link="${prefix}forearm_and_palm_subassembly" />
+			<child link="${prefix}part_1_1" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="-0.29670597283903604735" upper="0.29670597283903604735"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<link name="part_1_17">
+		<link name="${prefix}part_1_17">
 			<visual>
 				<origin xyz="-0.0049999999999999766853 0 0.00062867965644033962924" rpy="-3.141592653589793116 0 0" />
 				<geometry>
@@ -765,7 +765,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_18">
+		<link name="${prefix}part_1_18">
 			<visual>
 				<origin xyz="-0.029277356236810186951 -0.0078134566939178085043 -0.0067500000000003251843" rpy="-1.570796326794896336 0 0" />
 				<geometry>
@@ -788,7 +788,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_19">
+		<link name="${prefix}part_1_19">
 			<visual>
 				<origin xyz="-0.017524803018038624669 -0.0071295923980052022806 -0.0062499999999999361622" rpy="-1.57079632679489678 0 0" />
 				<geometry>
@@ -811,7 +811,7 @@
 			</inertial>
 		</link>
 
-		<link name="part_1_20">
+		<link name="${prefix}part_1_20">
 			<visual>
 				<origin xyz="-0.0089999999999997304378 -0.0060000000000001163514 -0.0057500000000045153881" rpy="-1.570796326794896558 0 0" />
 				<geometry>
@@ -835,37 +835,37 @@
 			<bow tags="effector"/>
 		</link>
 
-		<joint name="Lthumb_34" type="revolute">
+		<joint name="${prefix}Lthumb_34" type="revolute">
 			<origin xyz="-0.025000000000000122818 0 0.0010000000000002229328" rpy="0 0 0" />
-			<parent link="part_1_19" />
-			<child link="part_1_20" />
+			<parent link="${prefix}part_1_19" />
+			<child link="${prefix}part_1_20" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lthumb_23" type="revolute">
+		<joint name="${prefix}Lthumb_23" type="revolute">
 			<origin xyz="-0.038000000000000769274 0.00075000000000011168844 -0.0004999999999999865663" rpy="0 0 0" />
-			<parent link="part_1_18" />
-			<child link="part_1_19" />
+			<parent link="${prefix}part_1_18" />
+			<child link="${prefix}part_1_19" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lthumb_12" type="revolute">
+		<joint name="${prefix}Lthumb_12" type="revolute">
 			<origin xyz="-0.014750000000000068612 0.0067500000000000753841 -0.0077500000000000068834" rpy="-1.5707963267948972241 0 0" />
-			<parent link="part_1_17" />
-			<child link="part_1_18" />
+			<parent link="${prefix}part_1_17" />
+			<child link="${prefix}part_1_18" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="0" upper="1.570796326794896558"/>
 			<joint_properties friction="0.0"/>
 		</joint>
 
-		<joint name="Lthumb_01" type="revolute">
+		<joint name="${prefix}Lthumb_01" type="revolute">
 			<origin xyz="0.018758 0.127394 -0.022602" rpy="2.0752759914175786804 -1.0057357117289742465 3.141592653589763362" />
-			<parent link="left_forearm_and_palm_subassembly" />
-			<child link="part_1_17" />
+			<parent link="${prefix}forearm_and_palm_subassembly" />
+			<child link="${prefix}part_1_17" />
 			<axis xyz="0 0 1"/>
 			<limit effort="100" velocity="20" lower="-0.64577182323790194296" upper="0.64577182323790194296"/>
 			<joint_properties friction="0.0"/>

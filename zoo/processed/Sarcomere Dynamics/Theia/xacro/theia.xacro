@@ -79,7 +79,7 @@
     <link name="left_gripper_base">
         <bow tags="gripper"/>
     </link>
-    <xacro:artus_dex_left base_link="left_gripper_base" mesh_dir="left_artus"/>
+    <xacro:artus_dex_left prefix="left_" base_link="left_gripper_base" mesh_dir="left_artus"/>
 
 	<joint name="right_ur_fixed_joint" type="fixed">
       <parent link="table" />
@@ -103,7 +103,7 @@
     <link name="right_gripper_base">
         <bow tags="gripper"/>
     </link>
-    <xacro:artus_dex_right base_link="right_gripper_base" mesh_dir="right_artus"/>
+    <xacro:artus_dex_right prefix="right_" base_link="right_gripper_base" mesh_dir="right_artus"/>
 
     <gazebo reference="HeadCamera_frame">
         <sensor name="HeadCamera" type="camera">
