@@ -45,16 +45,16 @@
         <bow tags="limb"/>
     </link>
     <xacro:elephantbot_mycobot_pro_320 base_link="head_base_link" end_link="head_end_link"/>
-    <link name="head_end_link">
-        <bow tags="gripper"/>
-    </link>
+    <link name="head_end_link"/>
     <joint name="HeadCamera_fixed_joint" type="fixed">
         <parent link="head_end_link"/>
         <child link="FrontCamera_frame"/>
-        <origin rpy="0 0 0" xyz="0.28 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 0"/>
     </joint>
-    <link name="FrontCamera_frame"/>
+    <link name="FrontCamera_frame">
+        <bow tags="effector"/>
+    </link>
 
 	<joint name="left_ur_fixed_joint" type="fixed">
       <parent link="table" />
