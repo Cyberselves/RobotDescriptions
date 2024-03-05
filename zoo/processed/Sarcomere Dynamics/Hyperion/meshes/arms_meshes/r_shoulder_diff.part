@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "2147548bcc23dba29b05892c",
+    "documentMicroversion": "11a251e3f5433a77a64b3bd7",
+    "elementId": "9bbeaa13663551ff1ff41d17",
+    "fullConfiguration": "default",
+    "id": "MqCN2lbMhwMraG4Vr",
+    "isStandardContent": false,
+    "name": "R_Shoulder_Diff <1>",
+    "partId": "JPD",
+    "suppressed": false,
+    "type": "Part"
+}
