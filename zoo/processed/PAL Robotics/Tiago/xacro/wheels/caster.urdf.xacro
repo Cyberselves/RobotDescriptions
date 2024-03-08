@@ -20,7 +20,7 @@
 
   <xacro:include filename="$(find pmb2_description)/urdf/wheels/caster.gazebo.xacro"/>
   <xacro:macro name="caster" params="side radius width separation_x separation_y offset_x offset_y offset_z parent">
-    <link name="caster_${side}_1_link">
+    <link name="caster_${side}_1_link" contact="passive">
       <inertial>
         <origin xyz="-0.00634599 0.00005347 -0.02037519" rpy="0 0 0"/>
         <mass value="0.05144761"/>
@@ -43,7 +43,7 @@
       </collision-->
     </link>
 
-    <link name="caster_${side}_2_link">
+    <link name="caster_${side}_2_link" contact="passive">
       <inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="0.08855784"/>
