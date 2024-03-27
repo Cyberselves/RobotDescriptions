@@ -26,7 +26,9 @@
     </collision>
   </link>
 
-  <link name="FrontCamera_frame"/>
+  <link name="FrontCamera_frame">
+    <bow tags="effector"/>
+  </link>
   <joint name="FrontCamera_fixed_joint" type="fixed">
     <parent link="TORSO"/>
     <child link="FrontCamera_frame"/>
@@ -34,7 +36,9 @@
     <axis xyz="0 0 0"/>
   </joint>
 
-  <link name="RearCamera_frame"/>
+  <link name="RearCamera_frame">
+    <bow tags="effector"/>
+  </link>
   <joint name="RearCamera_fixed_joint" type="fixed">
     <parent link="TORSO"/>
     <child link="RearCamera_frame"/>
@@ -65,6 +69,7 @@
         <mesh filename="meshes/fl_hip.STL" />
       </geometry>
     </collision>
+    <bow tags="limb"/>
   </link>
   <joint name="FL_HipX_joint"  type="revolute">
     <origin xyz="0.1745 0.062 0" rpy="0 0 0" />
@@ -159,13 +164,13 @@
       <mass value="0.02"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
+    <bow tags="effector"/> 
   </link>
 
   <joint name="FL_Ankle" type="fixed" dont_collapse="true">
     <parent link="FL_SHANK"/>
     <child link="FL_FOOT"/>
     <origin xyz="0 0 -0.21012"/>
-
   </joint>
 
   <!--!!!!!!!!!!!! Front Right Leg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
@@ -190,6 +195,7 @@
         <mesh filename="meshes/fr_hip.STL" />
       </geometry>
     </collision>
+    <bow tags="limb"/> 
   </link>
   <joint name="FR_HipX_joint"
          type="revolute">
@@ -286,6 +292,7 @@
       <mass value="0.02"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
+    <bow tags="effector"/> 
   </link>
 
   <joint name="FR_Ankle" type="fixed" dont_collapse="true">
@@ -317,6 +324,7 @@
         <mesh filename="meshes/hl_hip.STL" />
       </geometry>
     </collision>
+    <bow tags="limb"/> 
   </link>
   <joint name="HL_HipX_joint" type="revolute">
     <origin xyz="-0.1745 0.062 0" rpy="0 0 0" />
@@ -411,6 +419,7 @@
       <mass value="0.02"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
+    <bow tags="effector"/> 
   </link>
 
   <joint name="HL_Ankle" type="fixed" dont_collapse="true">
@@ -442,6 +451,7 @@
         <mesh filename="meshes/hr_hip.STL" />
       </geometry>
     </collision>
+    <bow tags="limb"/> 
   </link>
   <joint name="HR_HipX_joint" type="revolute">
     <origin xyz="-0.1745 -0.062 0" rpy="0 0 0" />
@@ -536,6 +546,7 @@
       <mass value="0.02"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
+    <bow tags="effector"/> 
   </link>
 
   <joint name="HR_Ankle" type="fixed" dont_collapse="true">
